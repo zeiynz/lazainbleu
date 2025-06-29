@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LazainBleu ✨
 
-## Getting Started
+**LazainBleu** is a modern, elegant all-in-one front-end web application built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Zustand**. It serves as the official digital presence of the **LazainBleu** perfume brand, a Muslim-themed luxury label that blends exclusivity, minimalism, and modern aesthetics into an immersive e-commerce and brand storytelling experience.
 
-First, run the development server:
+> ✨ Built with performance and polish in mind — by [Zain](https://github.com/zeiynz)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📍 Live Site
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> ✨ [touch me](https://lazainbleu.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ All-in-one project: Landing page + e-commerce store
+- 🌟 Hero section, feature highlights, testimonials
+- 🛒 Functional shopping cart (with Zustand)
+- 🏬 Product listing & detail pages
+- 🌐 SEO optimized (Next.js App Router)
+- 🍎 Mobile-first responsive design
+- 🔍 Clean UI with Apple-like aesthetic
+- 🤖 Built for scalability and future backend/API integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Tech Stack
 
-## Deploy on Vercel
+- **Next.js 15 (App Router)** — Routing, layouts, and rendering
+- **TypeScript** — Type safety and better DX
+- **Tailwind CSS** — Utility-first CSS styling
+- **Zustand** — Lightweight global state (cart, UI)
+- **Framer Motion** — Smooth and interactive animations
+- **Vercel** — Deployment and hosting
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚖️ License
+
+This project is proprietary and owned by **LazainBleu**. Code is not licensed for redistribution or cloning.
+
+---
+
+## 💬 Contact
+
+- GitHub: [zeiynz](https://github.com/zeiynz)
+- LinkedIn: [lazainbelu](https://www.linkedin.com/company/lazainbleu)
+- Website: [coming soon](https://lazainbleu.com)
