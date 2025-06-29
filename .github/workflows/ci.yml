@@ -1,0 +1,54 @@
+# ✅ CI Workflow: Build + Lint + Test + Coverage
+# Untuk proyek Next.js + TypeScript (Lazain Bleu)
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    name: CI - Build, Lint, Test
+    runs-on: ubuntu-latest
+
+    steps:
+      # 🔄 Clone repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ⚙️ Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 📦 Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # 🧹 Run ESLint
+      - name: Run linter
+        run: npm run lint
+
+      # 🛠️ Build Next.js project
+      - name: Build project
+        run: npm run build
+
+      # ✅ Run unit tests (gunakan vitest atau jest)
+      - name: Run tests
+        run: npm run test
+
+      # 📊 (Optional) Generate code coverage report
+      - name: Generate coverage
+        run: npm run coverage || echo "No coverage script found"
+
+      # 📤 (Optional) Upload coverage report to Codecov (harus daftarkan repo kamu di https://codecov.io)
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+        continue-on-error: true
